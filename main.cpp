@@ -1,5 +1,4 @@
-#include "wordbank.h"
-#include <iostream>
+#include "wordgenerator.h"
 
 using namespace std;
 
