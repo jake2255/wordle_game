@@ -11,7 +11,6 @@ vector<char> WordGenerator(){
         exit(1);
     }
 
-    vector<char>returnWord;
     vector<string>wordList;
     string word;
 
@@ -21,6 +20,7 @@ vector<char> WordGenerator(){
     srand(time(NULL));
     int index = rand() % wordList.size();
 
+    vector<char>returnWord(wordList[index].begin(), wordList[index].end());
 
     file.close();
     return returnWord;
